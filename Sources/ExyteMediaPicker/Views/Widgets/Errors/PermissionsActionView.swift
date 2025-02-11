@@ -68,9 +68,9 @@ private extension PermissionsActionView {
             action: {
                 guard let url = URL(string: UIApplication.openSettingsURLString)
                 else { return }
-                if UIApplication.shared.canOpenURL(url) {
-                    UIApplication.shared.open(url)
-                }
+                //if UIApplication.shared.canOpenURL(url) {
+                //    UIApplication.shared.open(url)
+                //}
             }
         )
     }
