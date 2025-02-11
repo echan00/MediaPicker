@@ -42,7 +42,7 @@ private extension PermissionsActionView {
                 showSheet = true
             }
         case .authorize:
-            goToSettingsButton(text: "Allow Photos access in settings to see photos here")
+            goToSettingsButton(text: "Allow Photos access in Settings to select a profile picture.")
         case .unavailable:
             PermissionsErrorView(text: "Sorry, Photos are not available.", action: nil)
         case .unknown:
@@ -54,7 +54,7 @@ private extension PermissionsActionView {
     func buildCameraAction(_ action: PermissionsService.CameraAction) -> some View {
         switch action {
         case .authorize:
-            goToSettingsButton(text: "Allow Camera access in settings to see live preview")
+            goToSettingsButton(text: "Allow Camera access in Settings to take a picture for your profile.")
         case .unavailable:
             PermissionsErrorView(text: "Sorry, Camera is not available.", action: nil)
         case .unknown:
